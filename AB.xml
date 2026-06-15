@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite" thread-count ="5">
+
+  <test name="chrome">
+  <parameter name ="browser" value = "chrome"/>
+    <classes>
+      <class name="practicepage.APForm"/>
+    </classes>
+  </test> <!-- Test -->
+   
+   <test name="firefox">
+  <parameter name ="browser" value = "firefox"/>
+    <classes>
+      <class name="practicepage.APFForm"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
