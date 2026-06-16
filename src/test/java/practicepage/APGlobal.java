@@ -24,7 +24,7 @@ public class APGlobal  extends APUtility
 	@BeforeTest
 	 public void Dreports() 
 	 {
-		 HeroReporter = new ExtentSparkReporter("D:\\AutomationBlog\\datepicker\\date2") ;
+		 HeroReporter = new ExtentSparkReporter("D:\\AutomationBlog\\total") ;
 		 reports = new ExtentReports();
 		reports.attachReporter(HeroReporter);
 		

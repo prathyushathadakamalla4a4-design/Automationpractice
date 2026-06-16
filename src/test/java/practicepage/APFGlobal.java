@@ -19,6 +19,8 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class APFGlobal  extends APUtility
 {
 	ExtentSparkReporter HeroReporter;
@@ -47,6 +49,7 @@ public class APFGlobal  extends APUtility
    @BeforeClass
    public void launch() 
    {
+	   WebDriverManager.firefoxdriver().setup();
 	   driver = new FirefoxDriver();
 	   driver.get(url);
 	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
